@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import 'semantic-ui-css/semantic.min.css'
-import { Form, Grid, Header, Input, Label, Statistic } from 'semantic-ui-react'
+import { Form, Grid, Header, Icon, Statistic } from 'semantic-ui-react'
+import Link from 'next/link'
 
 export default function Home() {
   const [value, setValue] = useState('')
@@ -25,7 +26,20 @@ export default function Home() {
     <div>
       <Grid centered>
         <Grid.Row className="header">
-          <Header as="h1" textAlign="center" content="Bin2Dec" />
+          <Header as="h1" textAlign="center">
+            Bin2Dec
+            <Header.Subheader>
+              &copy;2021 sumomo-99
+            </Header.Subheader>
+            <Header.Subheader>
+              <Link href="https://github.com/sumomo-99/bin2dec">
+                <Icon link size="big" name="github" />
+              </Link>
+              <Link href="https://twitter.com/sumomo_99">
+                <Icon link size="big" name="twitter" />
+              </Link>
+            </Header.Subheader>
+          </Header>
         </Grid.Row>
         <Grid.Row>
           <Form>
@@ -49,7 +63,7 @@ export default function Home() {
 
       <style jsx global>{`
       .header {
-        margin: 4em 0 4em;
+        margin: 2em 0 0 0;
       }
       `}</style>
     </div>
