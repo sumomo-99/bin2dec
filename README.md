@@ -1,9 +1,13 @@
 # Bin2Dec
 2進数を10進数に変換します。
 
-## はじめかた
+デモURL:
+[https://bin2dec-sumomo-99.vercel.app/](https://bin2dec-sumomo-99.vercel.app/)
 
-開発サーバの起動:
+![demo screenshot](docs/images/demo-screenshot.png)
+
+## はじめかた
+### 開発サーバの起動
 
 ```bash
 npm run dev
@@ -11,7 +15,7 @@ npm run dev
 
 ブラウザで [http://localhost:3000](http://localhost:3000) にアクセスします。
 
-デプロイ:
+### ビルド
 
 ```bash
 npm run build
